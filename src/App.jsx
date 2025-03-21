@@ -1,24 +1,35 @@
 import { useState } from "react"
 
-function App(){
+function App() {
 
   const [nome, setNome] = useState('Ronaldo')
 
-  return(
+  const Formulario = () => {
+    return (
+      <div>
+        <input
+          className="nome"
+          onChange={(e) => { setNome(e.target.value) }}
+          type="text" />
+
+        <button
+          className="botao"
+          onClick={() => { alert(nome) }}
+        >
+          Clique Aqui
+        </button>
+      </div>
+    )
+  }
+
+  return (
     <div>
       <h3>Pizzaria 2E</h3>
 
-      <input 
-      className = "nome"
-      onChange={(e)=>{setNome(e.target.value)}}
-      type="text" />
-
-      <button 
-      className="botao"
-      onClick={()=>{alert(nome)}}
-      >
-        Clique Aqui
-      </button>
+      <Formulario/>
+      <Formulario/>
+      <Formulario/>
+      <Formulario/>
 
     </div>
   )
