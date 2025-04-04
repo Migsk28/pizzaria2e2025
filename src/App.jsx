@@ -48,6 +48,8 @@ function App() {
       <Formulario nome = "Kaique" idade = {25} sombra = "Digite seu nome.."/>
       <Formulario nome = "Nayara" sombra = "Digite seu nome.."/>
       <Formulario nome = "Julia" sombra = "Digite seu nome.."/>
+      <Formulario nome = "Julia" sombra = "Digite seu nome.."/>
+      <Formulario nome = "Julia" sombra = "Digite seu nome.."/>
 
     </div>
   )
